@@ -1,0 +1,14 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build with LÖVE-Build",
+      "type": "shell",
+      "command": "love-build", // Path to Love-build
+      "args": ["./GAME/main.lua"],
+      "group": "build",
+    }
+  ]
+}
