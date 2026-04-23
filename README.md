@@ -31,23 +31,14 @@ Press ```Ctrl + Shift + B```. To configure your build options, check build.lua i
 
 ```
 ├── /GAME
-
 │   ├── /Assets      Contains the game's assets, i.e. SFX, sprites
-
 │   ├── /Libraries   Contains external libraries, i.e. anim8
-
 │   └── /Src         Contains the game's source code
-
 │
-
 ├── /RESOURCES   Contains resources for you game that should not be shipped, like raw audio
-
 │
-
 └── /BUILDS          Contains the builds of your game made with makelove,
-
       ├── /LOVE      Contains builds in .love format
-
       └── /Binaries  Contains fused builds
 ```
 
@@ -108,21 +99,21 @@ I’m not sure why you want to suffer unless I somehow got lazy with updating th
   ]
 }
 ```
-6. Exit the ```.vscode``` folder and create a new folder titled ```GAME```
-7. In the ```GAME``` folder, create ```main.lua``` and ```build.lua```
-8. Enter VSCode / VSCodium.
-9. Press ```Ctrl + Shift + P```.
-12. Type "Preferences: Open User Settings (JSON)
-11. In that .json file, input:
+6. Exit to root.
+7. Create a ```.luarc.json``` file.
+18. In that .json file, input:
 ```
 {
-	"Lua.workspace.library": [
-		"${3rd}/love2d/library",
-		"lib"
-	],
-	"Lua.runtime.version": "LuaJIT",
-	"Lua.workspace.checkThirdParty": false,
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "runtime.version": "LuaJIT",
+    "diagnostics.globals": [
+        "love"
+    ],
+    "workspace.library": [
+        "${3rd}/love2d/library"
+    ],
+    "workspace.checkThirdParty": false
 }
 ```
 
-You can utilize this as a base for adding further customizations
+You can utilize this as a base for adding further customizations.
