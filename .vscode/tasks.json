@@ -5,7 +5,7 @@
       "label": "Build with LÖVE-Build",
       "type": "shell",
       "command": "love-build", // Path to Love-build
-      "args": ["./GAME/main.lua"],
+      "args": [".main.lua"],
       "group": "build",
     }
   ]

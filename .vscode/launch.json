@@ -9,7 +9,7 @@
         "command": "love"
       },
       "args": [
-        "./GAME",
+        ".",
         "debug"
       ],
     },
@@ -21,7 +21,7 @@
         "command": "love"
       },
       "args": [
-        "./GAME",
+        ".",
       ],
     },
   ]
